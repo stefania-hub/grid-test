@@ -1,2 +1,2 @@
 # grid-test
-*** repositoryper imparare display grid
+*** repository per imparare display grid

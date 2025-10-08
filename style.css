@@ -1,0 +1,93 @@
+* {
+    border: 1px solid red;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    height: 100vh;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.white{
+    background-color: white;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.container{
+    display: grid;
+    grid-template-rows: 25vh 25vh 25vh 25vh; 
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-areas:
+    "header header header"
+    "menu main widget1"
+    "menu main widget2"
+    "footer footer footer";
+    column-gap: 32px;
+    row-gap: 16px;
+    
+}
+
+
+.area-header{
+    grid-area: header;
+}
+.area-menu{
+    grid-area: menu;
+}
+
+.area-main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "element1 . ."
+    ". element2 ."
+    ". . element3";
+}
+.area-widget1{
+    grid-area: widget1;
+}
+
+.area-widget2{
+    grid-area: widget2;
+}
+.area-footer{
+    grid-area: footer;
+    height: 100px;
+    width: 200px;
+    justify-self: center;
+    align-items: center;
+}
+.area-element1{
+    grid-area: element1;
+}
+.area-element2{
+    grid-area: element2;
+}
+.area-element3{
+    grid-area: element3;
+}
