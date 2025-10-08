@@ -59,6 +59,7 @@ body{
 }
 
 .area-main{
+    
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
